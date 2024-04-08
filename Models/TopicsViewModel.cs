@@ -13,11 +13,11 @@ namespace TrainingFPT.Models
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Choose Course, please")]
-        public int CourseId { get; set; }
-
         [Required(ErrorMessage = "Enter name's topic, please")]
         public string NameTopic { get; set; }
+
+        [Required(ErrorMessage = "Choose Course, please")]
+        public int CourseId { get; set; }
 
         public string? Description { get; set; }
 

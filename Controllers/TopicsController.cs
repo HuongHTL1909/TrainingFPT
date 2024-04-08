@@ -2,6 +2,7 @@
 using TrainingFPT.Models.Queries;
 using TrainingFPT.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using TrainingFPT.Migrations;
 using TrainingFPT.Helpers;
 
 namespace TrainingFPT.Controllers
@@ -9,11 +10,11 @@ namespace TrainingFPT.Controllers
     public class TopicsController : Controller
     {
         [HttpGet]
-        public IActionResult Index(string? search)
+        public IActionResult Index(string? search, string? status)
         {
             TopicsViewModel topic = new TopicsViewModel();
             topic.TopicDetailList = new List<TopicDetail>();
-            var dataTopics = new TopicQuery().GetAllDataTopics(search);
+            var dataTopics = new TopicQuery().GetAllDataTopics(search, status);
             foreach (var data in dataTopics)
             {
                 topic.TopicDetailList.Add(new TopicDetail
@@ -22,14 +23,15 @@ namespace TrainingFPT.Controllers
                     NameTopic = data.NameTopic,
                     CourseId = data.CourseId,
                     Description = data.Description,
-                    Status = data.Status,
                     NameVideo = data.NameVideo,
                     NameAudio = data.NameAudio,
                     NameDocumentTopic = data.NameDocumentTopic,
+                    Status = data.Status,
                     viewCourseName = data.viewCourseName,
                 });
             }
-            ViewBag.keyword = search;
+            ViewData["keyword"] = search;
+            ViewBag.Status = status;
             return View(topic);
         }
 
@@ -43,7 +45,7 @@ namespace TrainingFPT.Controllers
             {
                 items.Add(new SelectListItem
                 {
-                    Value = course.Id.ToString(),
+                    Value = course. Id.ToString(),
                     Text = course.NameCourse
                 });
             }
@@ -67,10 +69,10 @@ namespace TrainingFPT.Controllers
                         topic.NameTopic,
                         topic.CourseId,
                         topic.Description,
-                        topic.Status,
                         videoTopic,
                         audioTopic,
-                        documentTopic
+                        documentTopic,
+                        topic.Status
                     );
                     if (idTopic > 0)
                     {
@@ -87,6 +89,7 @@ namespace TrainingFPT.Controllers
                     //neu co loi
                     return Ok(ex.Message);
                 }
+                
             }
             List<SelectListItem> items = new List<SelectListItem>();
             var dataCourses = new CourseQuery().GetAllDataCourses(null);
@@ -128,9 +131,9 @@ namespace TrainingFPT.Controllers
             try
             {
                 var infoTopic = new TopicQuery().GetDetailTopicById(topicDetail.Id);
-                string videoTopic = infoTopic.NameTopic;
+                string videoTopic = infoTopic.NameVideo;
                 string audioTopic = infoTopic.NameAudio;
-                string documentTopic = infoTopic?.NameDocumentTopic;
+                string documentTopic = infoTopic.NameDocumentTopic;
                 //kiểm tra xem người dùng có muốn thay đổi ảnh hay ko
                 if (topicDetail.Video != null)
                 {
@@ -139,7 +142,7 @@ namespace TrainingFPT.Controllers
                 }
                 if (topicDetail.Audio != null)
                 {
-                    audioTopic = UploadFileHelper.UploadFile(Audio, "audio");
+                    audioTopic = UploadFileHelper.UploadFile(Audio, "audios");
                 }
 
                 if (topicDetail.DocumentTopic != null)
@@ -170,18 +173,6 @@ namespace TrainingFPT.Controllers
             {
                 return Ok(ex.Message);
             }
-            List<SelectListItem> items = new List<SelectListItem>();
-            var dataCourses = new CourseQuery().GetAllDataCourses(null);
-            foreach (var course in dataCourses)
-            {
-                items.Add(new SelectListItem
-                {
-                    Value = course.Id.ToString(),
-                    Text = course.NameCourse
-                });
-            }
-            ViewBag.Course = items;
-            return View(topicDetail);
         }
 
         [HttpGet]

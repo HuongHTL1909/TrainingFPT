@@ -20,9 +20,31 @@
         <a class="btn btn-primary" href="@Url.Action("Add", "Topics")"> Add Topic + </a>
         <form asp-action="Index" method="get" class="my-3">
             <div class="form-group mb-3">
-                Find by name: <input type="text" name="search" value="@ViewBag.keyword" />
+                Find by name: <input name="search" value="@ViewData["keyword"]" />
                 <span> | </span>
-                <button type="submit" class="btn btn-primary btn-sm mb-0"> Search</button>
+                Filter by status :
+                <select name="Status">
+                    <option value=""> --- Choose Status ---</option>
+                    @if (ViewBag.Status == "Active")
+                    {
+                        <option value="Active" selected="selected"> Active </option>
+                    }
+                    else
+                    {
+                        <option value="Active"> Active </option>
+                    }
+
+                    @if (ViewBag.Status == "Deactive")
+                    {
+                        <option value="Deactive" selected="selected"> Deactive </option>
+                    }
+                    else
+                    {
+                        <option value="Deactive"> Deactive </option>
+                    }
+                </select>
+                <span> | </span>
+                <button type="submit" class="btn btn-primary btn-sm mb-0"> Search and Filter</button>
                 <span> | </span>
                 <a class="btn btn-sm btn-info mb-0 ml-2" asp-action="Index">Back to lists</a>
             </div>
@@ -75,7 +97,6 @@
                     <th>Document</th>
                     <th>Description</th>
                     <th>Status</th>
-                    <th>Created At</th>
                     <th colspan="2" width="10%" class="text-center">Action</th>
                 </tr>
             </thead>
@@ -87,17 +108,17 @@
                         <td>@item.NameTopic</td>
                         <td>@item.viewCourseName</td>
                         <td width="10%">
-                            <video class="fa-file-video" controls title="@item.NameTopic">
-                                <source src="/uploads/videos/@item.NameVideo." type="video/mp4"/>
+                            <video class="img-fluid" controls alt="@item.NameTopic">
+                                <source src="/uploads/videos/@item.NameVideo" />
                             </video>
                         </td>
                         <td width="10%">
-                            <audio class="fa-file-audio" title="@item.NameTopic">
+                            <audio controls>
                                 <source src="/uploads/audios/@item.NameAudio" type="audio/mp3" />
                             </audio>
                         </td>
                         <td width="10%">
-                            <a class="fa-file-word" href="/uploads/documents/@item.NameDocumentTopic" title="@item.NameTopic" target="_blank">@item.NameDocumentTopic</a>
+                            <a href="/uploads/documents/@item.NameDocumentTopic" download>Download document</a>
                         </td>
                         <td>@item.Description</td>
                         <td>@item.Status</td>

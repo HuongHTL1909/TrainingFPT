@@ -1,5 +1,4 @@
 ﻿using Microsoft.Data.SqlClient;
-using static Microsoft.Extensions.Logging.EventSource.LoggingEventSource;
 
 namespace TrainingFPT.Models.Queries
 {
@@ -9,8 +8,8 @@ namespace TrainingFPT.Models.Queries
             string nameTopic,
             int courseId,
             string? description,
-            string video,
-            string audio,
+            string videoTopic,
+            string audioTopic,
             string documentTopic,
             string status,
             int id
@@ -19,21 +18,21 @@ namespace TrainingFPT.Models.Queries
             bool checkingUpdate = false;
             using (SqlConnection connection = Database.GetSqlConnection())
             {
-                string sql = "UPDATE [Topics] SET [NameTopic] = @NameTopic, [CourseId] = @CourseId, [Description] = @Description, [Video] = @Video, [Audio] = @Audio, [DocumentTopic] = @DocumentTopic, [Status] = @Status, [UpdatedAt] = @UpdatedAt WHERE [Id] = @id AND [DeletedAt] IS NULL";
+                string sql = "UPDATE [Topics] SET [NameTopic] = @nameTopic, [CourseId] = @CourseId, [Description] = @description, [Video] = @video, [Audio] = @audio, [DocumentTopic] = @documentTopic, [Status] = @status, [UpdatedAt] = @updatedAt WHERE [Id] = @id AND [DeletedAt] IS NULL";
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(sql, connection);
-                cmd.Parameters.AddWithValue("@NameTopic", nameTopic);
-                cmd.Parameters.AddWithValue("@CourseId", courseId);
-                cmd.Parameters.AddWithValue("@Description", description ?? DBNull.Value.ToString());
-                cmd.Parameters.AddWithValue("@Video", video ?? DBNull.Value.ToString());
-                cmd.Parameters.AddWithValue("@Audio", audio ?? DBNull.Value.ToString());
-                cmd.Parameters.AddWithValue("@DocumentTopic", documentTopic ?? DBNull.Value.ToString());
-                cmd.Parameters.AddWithValue("@Status", status);
-                cmd.Parameters.AddWithValue("@UpdatedAt", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                cmd.Parameters.AddWithValue("@nameTopic", nameTopic ?? DBNull.Value.ToString());
+                cmd.Parameters.AddWithValue("@courseId", courseId);
+                cmd.Parameters.AddWithValue("@description", description ?? DBNull.Value.ToString());
+                cmd.Parameters.AddWithValue("@video", videoTopic ?? DBNull.Value.ToString());
+                cmd.Parameters.AddWithValue("@audio", audioTopic ?? DBNull.Value.ToString());
+                cmd.Parameters.AddWithValue("@documentTopic", documentTopic ?? DBNull.Value.ToString());
+                cmd.Parameters.AddWithValue("@status", status ?? DBNull.Value.ToString());
+                cmd.Parameters.AddWithValue("@updatedAt", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                 cmd.Parameters.AddWithValue("@id", id);
                 cmd.ExecuteNonQuery();
-                checkingUpdate = true;
                 connection.Close();
+                checkingUpdate = true;
             }
             return checkingUpdate;
         }
@@ -45,8 +44,8 @@ namespace TrainingFPT.Models.Queries
             using (SqlConnection connection = Database.GetSqlConnection())
             {
                 string sqlQuery = "UPDATE [Topics] SET [DeletedAt] =  @deletedAt WHERE [Id] = @id";
-                connection.Open();
                 SqlCommand cmd = new SqlCommand(sqlQuery, connection);
+                connection.Open();
                 cmd.Parameters.AddWithValue("@id", id);
                 cmd.Parameters.AddWithValue("@deletedAt", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
                 cmd.ExecuteNonQuery();
@@ -58,14 +57,14 @@ namespace TrainingFPT.Models.Queries
         }
 
 
-        public TopicDetail GetDetailTopicById(int id)
+        public TopicDetail GetDetailTopicById(int id = 0)
         {
             TopicDetail topic = new TopicDetail();
             using (SqlConnection connection = Database.GetSqlConnection())
             {
-                string sql = "SELECT * FROM [Topics] WHERE [Id] = @id AND [DeletedAt] IS NULL";
+                string sqlQuery = "SELECT * FROM [Topics] WHERE [Id] = @id AND [DeletedAt] IS NULL";
                 connection.Open();
-                SqlCommand cmd = new SqlCommand(sql, connection);
+                SqlCommand cmd = new SqlCommand(sqlQuery, connection);
                 cmd.Parameters.AddWithValue("@id", id);
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
@@ -75,30 +74,45 @@ namespace TrainingFPT.Models.Queries
                         topic.NameTopic = reader["NameTopic"].ToString();
                         topic.CourseId = Convert.ToInt32(reader["CourseId"]);
                         topic.Description = reader["Description"].ToString();
-                        topic.Status = reader["Status"].ToString();
                         topic.NameVideo = reader["Video"].ToString();
                         topic.NameAudio = reader["Audio"].ToString();
                         topic.NameDocumentTopic = reader["DocumentTopic"].ToString();
+                        topic.viewCourseName = reader["CourseId"].ToString();
+                        topic.Status = reader["Status"].ToString();
                     }
+                    connection.Close();
                 }
-                connection.Close();
+                
             }
             return topic;
         }
 
 
-        public List<TopicDetail> GetAllDataTopics(string? keyword)
+        public List<TopicDetail> GetAllDataTopics(string? keyword, string? filter)
         {
             string search = "%" + keyword + "%";
             List<TopicDetail> topics = new List<TopicDetail>();
             using (SqlConnection connection = Database.GetSqlConnection())
             {
-                string sql = "SELECT [co].*, [ca].[NameCourse] FROM [Topics] AS [co] INNER JOIN [Courses] AS [ca] ON [co].[CourseId] = [ca].[Id] WHERE ([co].[NameTopic] LIKE @NameTopic OR [ca].[NameCourse] LIKE @NameCourse OR [co].[Description] LIKE @Description) AND [co].[DeletedAt] IS NULL";
+                string sqlQuery = string.Empty;
+                if (filter != null)
+                {
+                    sqlQuery = "SELECT * FROM [Topics] WHERE [NameTopic] LIKE @keyword AND [DeletedAt] IS NULL AND [Status] = @status";
+                }
+                else
+                {
+                    sqlQuery = "SELECT * FROM [Topics] WHERE [NameTopic] LIKE @keyword AND [DeletedAt] IS NULL";
+                }
+
+                SqlCommand cmd = new SqlCommand(sqlQuery, connection);
+                cmd.Parameters.AddWithValue("@keyword", search ?? DBNull.Value.ToString());
+                if (filter != null)
+                {
+                    cmd.Parameters.AddWithValue("@status", filter ?? DBNull.Value.ToString());
+                }
+
+                string sql = "SELECT [to].*, [co].[NameCourse] FROM [Topics] AS [to] INNER JOIN [Courses] AS [co] ON [to].[CourseId] = [co].[Id] WHERE [co].[DeletedAt] IS NULL";
                 connection.Open();
-                SqlCommand cmd = new SqlCommand(sql, connection);
-                cmd.Parameters.AddWithValue("@NameTopic", search ?? DBNull.Value.ToString());
-                cmd.Parameters.AddWithValue("@NameCourse", search ?? DBNull.Value.ToString());
-                cmd.Parameters.AddWithValue("@Description", search ?? DBNull.Value.ToString());
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
@@ -106,13 +120,13 @@ namespace TrainingFPT.Models.Queries
                         TopicDetail detail = new TopicDetail();
                         detail.Id = Convert.ToInt32(reader["Id"]);
                         detail.NameTopic = reader["NameTopic"].ToString();
-                        detail.Description = reader["Description"].ToString();
                         detail.CourseId = Convert.ToInt32(reader["CourseId"]);
+                        detail.Description = reader["Description"].ToString();
                         detail.NameVideo = reader["Video"].ToString();
                         detail.NameAudio = reader["Audio"].ToString();
                         detail.NameDocumentTopic = reader["DocumentTopic"].ToString();
                         detail.Status = reader["Status"].ToString();
-                        detail.viewCourseName = reader["NameCourse"].ToString();
+                        detail.viewCourseName = reader["CourseId"].ToString();
                         topics.Add(detail);
                     }
                 }
@@ -126,10 +140,10 @@ namespace TrainingFPT.Models.Queries
             string nameTopic,
             int courseId,
             string? description,
-            string status,
             string videoTopic,
             string audioTopic,
-            string documentTopic
+            string documentTopic,
+            string status
         )
         {
 
