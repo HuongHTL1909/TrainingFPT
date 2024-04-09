@@ -9,8 +9,8 @@ namespace TrainingFPT.Models.Queries
             int courseId,
             string? description,
             string videoTopic,
-            string audioTopic,
-            string documentTopic,
+            string? audioTopic,
+            string? documentTopic,
             string status,
             int id
         )
@@ -18,11 +18,11 @@ namespace TrainingFPT.Models.Queries
             bool checkingUpdate = false;
             using (SqlConnection connection = Database.GetSqlConnection())
             {
-                string sql = "UPDATE [Topics] SET [NameTopic] = @nameTopic, [CourseId] = @CourseId, [Description] = @description, [Video] = @video, [Audio] = @audio, [DocumentTopic] = @documentTopic, [Status] = @status, [UpdatedAt] = @updatedAt WHERE [Id] = @id AND [DeletedAt] IS NULL";
+                string sql = "UPDATE [Topics] SET [NameTopic] = @nameTopic, [CourseId] = @Courses, [Description] = @description, [Video] = @video, [Audio] = @audio, [DocumentTopic] = @documentTopic, [Status] = @status, [UpdatedAt] = @updatedAt WHERE [Id] = @id AND [DeletedAt] IS NULL";
                 connection.Open();
                 SqlCommand cmd = new SqlCommand(sql, connection);
                 cmd.Parameters.AddWithValue("@nameTopic", nameTopic ?? DBNull.Value.ToString());
-                cmd.Parameters.AddWithValue("@courseId", courseId);
+                cmd.Parameters.AddWithValue("@Courses", courseId);
                 cmd.Parameters.AddWithValue("@description", description ?? DBNull.Value.ToString());
                 cmd.Parameters.AddWithValue("@video", videoTopic ?? DBNull.Value.ToString());
                 cmd.Parameters.AddWithValue("@audio", audioTopic ?? DBNull.Value.ToString());
@@ -97,11 +97,11 @@ namespace TrainingFPT.Models.Queries
                 string sqlQuery = string.Empty;
                 if (filter != null)
                 {
-                    sqlQuery = "SELECT * FROM [Topics] WHERE [NameTopic] LIKE @keyword AND [DeletedAt] IS NULL AND [Status] = @status";
+                    sqlQuery = "SELECT [to].*, [co].[NameCourse] FROM [Topics] AS [to] INNER JOIN [Courses] AS [co] ON [to].[CourseId] = [co].[Id] WHERE [to].[NameTopic] LIKE @keyword AND [to].[DeletedAt] IS NULL AND [to].[Status] = @status";
                 }
                 else
                 {
-                    sqlQuery = "SELECT * FROM [Topics] WHERE [NameTopic] LIKE @keyword AND [DeletedAt] IS NULL";
+                    sqlQuery = "SELECT [to].*, [co].[NameCourse] FROM [Topics] AS [to] INNER JOIN [Courses] AS [co] ON [to].[CourseId] = [co].[Id] WHERE [to].[NameTopic] LIKE @keyword AND [to].[DeletedAt] IS NULL";
                 }
 
                 SqlCommand cmd = new SqlCommand(sqlQuery, connection);
@@ -111,7 +111,7 @@ namespace TrainingFPT.Models.Queries
                     cmd.Parameters.AddWithValue("@status", filter ?? DBNull.Value.ToString());
                 }
 
-                string sql = "SELECT [to].*, [co].[NameCourse] FROM [Topics] AS [to] INNER JOIN [Courses] AS [co] ON [to].[CourseId] = [co].[Id] WHERE [co].[DeletedAt] IS NULL";
+                /*string sql = "SELECT [to].*, [co].[NameCourse] FROM [Topics] AS [to] INNER JOIN [Courses] AS [co] ON [to].[CourseId] = [co].[Id] WHERE [co].[DeletedAt] IS NULL";*/
                 connection.Open();
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
@@ -126,7 +126,7 @@ namespace TrainingFPT.Models.Queries
                         detail.NameAudio = reader["Audio"].ToString();
                         detail.NameDocumentTopic = reader["DocumentTopic"].ToString();
                         detail.Status = reader["Status"].ToString();
-                        detail.viewCourseName = reader["CourseId"].ToString();
+                        detail.viewCourseName = reader["NameCourse"].ToString();
                         topics.Add(detail);
                     }
                 }
@@ -136,37 +136,37 @@ namespace TrainingFPT.Models.Queries
             return topics;
         }
 
-        public int InsetDataTopic(
-            string nameTopic,
-            int courseId,
-            string? description,
-            string videoTopic,
-            string audioTopic,
-            string documentTopic,
-            string status
-        )
-        {
-
-            int idTopic = 0;
-            using (SqlConnection connection = Database.GetSqlConnection())
+            public int InsetDataTopic(
+                string nameTopic,
+                int courseId,
+                string? description,
+                string videoTopic,
+                string? audioTopic,
+                string? documentTopic,
+                string status
+            )
             {
-                string sqlQuery = "INSERT INTO [Topics]([NameTopic], [CourseId], [Description], [Video], [Audio], [DocumentTopic], [Status], [CreatedAt]) VALUES (@NameTopic,@CourseId,@Description,@Video,@Audio,@DocumentTopic,@Status,@CreatedAt) SELECT SCOPE_IDENTITY()";
-                //SELECT SCOPE_IDENTITY()  : lay ra ID vua moi them
-                connection.Open();
-                SqlCommand cmd = new SqlCommand(sqlQuery, connection);
-                cmd.Parameters.AddWithValue("@NameTopic", nameTopic);
-                cmd.Parameters.AddWithValue("@CourseId", courseId);
-                cmd.Parameters.AddWithValue("@Description", description ?? DBNull.Value.ToString());
-                cmd.Parameters.AddWithValue("@Video", videoTopic);
-                cmd.Parameters.AddWithValue("@Audio", audioTopic);
-                cmd.Parameters.AddWithValue("@DocumentTopic", documentTopic);
-                cmd.Parameters.AddWithValue("@Status", status);
-                cmd.Parameters.AddWithValue("@CreatedAt", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-                idTopic = Convert.ToInt32(cmd.ExecuteScalar());
-                connection.Close();
+
+                int idTopic = 0;
+                using (SqlConnection connection = Database.GetSqlConnection())
+                {
+                    string sqlQuery = "INSERT INTO [Topics]([NameTopic], [CourseId], [Description], [Video], [Audio], [DocumentTopic], [Status], [CreatedAt]) VALUES (@NameTopic,@CourseId,@Description,@Video,@Audio,@DocumentTopic,@Status,@CreatedAt) SELECT SCOPE_IDENTITY()";
+                    //SELECT SCOPE_IDENTITY()  : lay ra ID vua moi them
+                    connection.Open();
+                    SqlCommand cmd = new SqlCommand(sqlQuery, connection);
+                    cmd.Parameters.AddWithValue("@NameTopic", nameTopic);
+                    cmd.Parameters.AddWithValue("@CourseId", courseId);
+                    cmd.Parameters.AddWithValue("@Description", description ?? DBNull.Value.ToString());
+                    cmd.Parameters.AddWithValue("@Video", videoTopic);
+                    cmd.Parameters.AddWithValue("@Audio", audioTopic);
+                    cmd.Parameters.AddWithValue("@DocumentTopic", documentTopic);
+                    cmd.Parameters.AddWithValue("@Status", status);
+                    cmd.Parameters.AddWithValue("@CreatedAt", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+                    idTopic = Convert.ToInt32(cmd.ExecuteScalar());
+                    connection.Close();
+                }
+                return idTopic;
             }
-            return idTopic;
-        }
 
     }
 }

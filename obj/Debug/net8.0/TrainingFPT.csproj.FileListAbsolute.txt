@@ -407,4 +407,3 @@ E:\BTEC\AD\SourseCode\TRAININGFPT-AD-ASP-MVC\TrainingFPT\obj\Debug\net8.0\refint
 E:\BTEC\AD\SourseCode\TRAININGFPT-AD-ASP-MVC\TrainingFPT\obj\Debug\net8.0\TrainingFPT.pdb
 E:\BTEC\AD\SourseCode\TRAININGFPT-AD-ASP-MVC\TrainingFPT\obj\Debug\net8.0\TrainingFPT.genruntimeconfig.cache
 E:\BTEC\AD\SourseCode\TRAININGFPT-AD-ASP-MVC\TrainingFPT\obj\Debug\net8.0\ref\TrainingFPT.dll
-E:\BTEC\AD\SourseCode\TRAININGFPT-AD-ASP-MVC\TrainingFPT\obj\Debug\net8.0\TrainingFPT.sourcelink.json

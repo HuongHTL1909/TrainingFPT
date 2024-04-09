@@ -16,7 +16,7 @@
                 <h5> Update Topic</h5>
             </div>
             <div class="card-body">
-                <form enctype="multipart/form-data" asp-action="Edit">
+                <form enctype="multipart/form-data" asp-action="Update">
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group mb-3">
@@ -72,6 +72,8 @@
                                 <label asp-for="NameDocumentTopic"></label>
                                 <input type="file" asp-for="NameDocumentTopic" class="form-control" />
                                 <span asp-validation-for="NameDocumentTopic"></span>
+                                <br />
+                                <audio width="50%" src="/uploads/documents/" alt="@Model.NameTopic" />
                             </div>
 
                             <button class="btn btn-primary" type="submit"> Update </button>

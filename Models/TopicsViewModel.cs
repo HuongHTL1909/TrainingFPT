@@ -37,7 +37,7 @@ namespace TrainingFPT.Models
 
         [Required(ErrorMessage = "Choose File document, please")]
         [AllowExtensionFile(new string[] { ".doc", ".docx", ".pdf", ".txt", ".rtf" })]
-        [AllowMaxSizeFile(50 * 1024 * 1024)]
+        [AllowMaxSizeFile(100 * 1024 * 1024)]
         public IFormFile DocumentTopic { get; set; }
         [AllowNull]
         public string? NameDocumentTopic { get; set; }

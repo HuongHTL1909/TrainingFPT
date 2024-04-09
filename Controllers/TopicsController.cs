@@ -27,7 +27,7 @@ namespace TrainingFPT.Controllers
                     NameAudio = data.NameAudio,
                     NameDocumentTopic = data.NameDocumentTopic,
                     Status = data.Status,
-                    viewCourseName = data.viewCourseName,
+                    viewCourseName = data.viewCourseName,   
                 });
             }
             ViewData["keyword"] = search;
@@ -56,8 +56,15 @@ namespace TrainingFPT.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Add(TopicDetail topic, IFormFile Video, IFormFile Audio, IFormFile DocumentTopic)
+        public IActionResult Add(TopicDetail topic, IFormFile Video, IFormFile Audio, IFormFile DocumentTopic)
         {
+
+            // Kiểm tra xem ít nhất một trong các tệp tin đã được chọn
+            if (Video == null && Audio == null && DocumentTopic == null)
+            {
+                ModelState.AddModelError("", "Please choose at least one file (Video, Audio, or Document).");
+            }
+            //return Ok(ModelState);
             if (ModelState.IsValid)
             {
                 try
@@ -121,7 +128,7 @@ namespace TrainingFPT.Controllers
                     Text = course.NameCourse
                 });
             }
-            ViewBag.Course = items;
+            ViewBag.Courses = items;
             return View(detail);
         }
 
