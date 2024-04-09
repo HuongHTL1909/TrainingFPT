@@ -1,0 +1,501 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|e:\\btec\\ad\\soursecode\\trainingfpt-ad-asp-mvc\\trainingfpt\\controllers\\topicscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\controllers\\topicscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\models\\queries\\topicquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\models\\queries\\topicquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\models\\topicsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\models\\topicsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\topics\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\topics\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\topics\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\topics\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\topics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\topics\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\validations\\allowmaxsizefile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\validations\\allowmaxsizefile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\validations\\allowextensionfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\validations\\allowextensionfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\models\\queries\\coursequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\models\\queries\\coursequery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\courses\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\courses\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\helpers\\uploadfilehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\helpers\\uploadfilehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\courses\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\courses\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\models\\coursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\models\\coursesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\shared\\_layoutmain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\shared\\_layoutmain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\models\\queries\\categoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\models\\queries\\categoryquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\trainingfpt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6BF7BA1-D60B-4729-9A37-48BBA4BA4D83}|TrainingFPT\\TrainingFPT.csproj|solutionrelative:trainingfpt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Controllers\\CategoryController.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "TrainingFPT\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAcwIUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T08:10:00.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TopicsViewModel.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Models\\TopicsViewModel.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Models\\TopicsViewModel.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Models\\TopicsViewModel.cs",
+              "RelativeToolTip": "TrainingFPT\\Models\\TopicsViewModel.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T15:06:48.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TopicsController.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Controllers\\TopicsController.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Controllers\\TopicsController.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Controllers\\TopicsController.cs",
+              "RelativeToolTip": "TrainingFPT\\Controllers\\TopicsController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAIwE4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T13:09:11.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TopicQuery.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Models\\Queries\\TopicQuery.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Models\\Queries\\TopicQuery.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Models\\Queries\\TopicQuery.cs",
+              "RelativeToolTip": "TrainingFPT\\Models\\Queries\\TopicQuery.cs",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAkwIYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T13:10:21.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Topics\\Index.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Topics\\Index.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Topics\\Index.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Topics\\Index.cshtml",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAiwHcAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-07T19:07:32.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Topics\\Update.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Topics\\Update.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Topics\\Update.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Topics\\Update.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwEoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-07T19:08:12.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Topics\\Add.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Topics\\Add.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Topics\\Add.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Topics\\Add.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAD0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-07T19:07:51.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AllowExtensionFile.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Validations\\AllowExtensionFile.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Validations\\AllowExtensionFile.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Validations\\AllowExtensionFile.cs",
+              "RelativeToolTip": "TrainingFPT\\Validations\\AllowExtensionFile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T08:17:17.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AllowMaxSizeFile.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Validations\\AllowMaxSizeFile.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Validations\\AllowMaxSizeFile.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Validations\\AllowMaxSizeFile.cs",
+              "RelativeToolTip": "TrainingFPT\\Validations\\AllowMaxSizeFile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T08:17:19.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Courses\\Update.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Courses\\Update.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Courses\\Update.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Courses\\Update.cshtml",
+              "ViewState": "AQIAACsAAAAAAAAAAAAiwEcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T13:10:12.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Controllers\\CoursesController.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "TrainingFPT\\Controllers\\CoursesController.cs",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAcwKkAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T14:12:00.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UploadFileHelper.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Helpers\\UploadFileHelper.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Helpers\\UploadFileHelper.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Helpers\\UploadFileHelper.cs",
+              "RelativeToolTip": "TrainingFPT\\Helpers\\UploadFileHelper.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAiwDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T16:05:26.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CourseQuery.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Models\\Queries\\CourseQuery.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Models\\Queries\\CourseQuery.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Models\\Queries\\CourseQuery.cs",
+              "RelativeToolTip": "TrainingFPT\\Models\\Queries\\CourseQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKAAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T13:10:46.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Courses\\Index.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Courses\\Index.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Courses\\Index.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Courses\\Index.cshtml",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAiwGoAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-09T05:50:26.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Courses\\Add.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Courses\\Add.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Courses\\Add.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Courses\\Add.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAiwEoAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T17:58:36.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CoursesViewModel.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Models\\CoursesViewModel.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Models\\CoursesViewModel.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Models\\CoursesViewModel.cs",
+              "RelativeToolTip": "TrainingFPT\\Models\\CoursesViewModel.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T06:41:25.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Controllers\\LoginController.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "TrainingFPT\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwCAAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T07:20:43.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Login\\Index.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAgwC8AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T17:52:24.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T17:29:19.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_LayoutMain.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Shared\\_LayoutMain.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Shared\\_LayoutMain.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Shared\\_LayoutMain.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Shared\\_LayoutMain.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAEYAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T16:00:01.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T17:58:03.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T17:52:15.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_LayoutLogin.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Shared\\_LayoutLogin.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Shared\\_LayoutLogin.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Shared\\_LayoutLogin.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Shared\\_LayoutLogin.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T17:28:50.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T17:29:18.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "TrainingFPT\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-08T17:32:30.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CategoryQuery.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Models\\Queries\\CategoryQuery.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Models\\Queries\\CategoryQuery.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Models\\Queries\\CategoryQuery.cs",
+              "RelativeToolTip": "TrainingFPT\\Models\\Queries\\CategoryQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T17:30:51.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TrainingFPT\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TrainingFPT\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T16:00:49.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\appsettings.json",
+              "RelativeDocumentMoniker": "TrainingFPT\\appsettings.json",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\appsettings.json",
+              "RelativeToolTip": "TrainingFPT\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-08T15:13:10.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Database.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Database.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Database.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Database.cs",
+              "RelativeToolTip": "TrainingFPT\\Database.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T15:12:48.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Program.cs",
+              "RelativeDocumentMoniker": "TrainingFPT\\Program.cs",
+              "ToolTip": "E:\\BTEC\\AD\\SourseCode\\TRAININGFPT-AD-ASP-MVC\\TrainingFPT\\Program.cs",
+              "RelativeToolTip": "TrainingFPT\\Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T15:12:42.243Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
